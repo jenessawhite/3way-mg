@@ -1,0 +1,60 @@
+#recent-slider {
+  background: $tmg-blue;
+
+  #recent-post-slider-1 {
+    padding: 3rem 0;
+
+    button.slick-prev.slick-arrow {
+      background: url('../../images/left-arrow.png') center center no-repeat !important;
+      background-size: 15px 30px !important;
+    }
+
+    .slick-list {
+      margin: 0 2rem;
+      color: $white;
+
+      h2.wp-post-title a {
+        color: $white;
+      }
+
+      .wp-post-date::after {
+        background: $tmg-yellow;
+        width: 100%;
+      }
+
+      .wp-post-content a.readmorebtn {
+        background: $tmg-yellow;
+        border: transparent;
+        color: $black;
+        border-radius: 3px;
+        padding: rem(6px) rem(12px);
+        margin-top: 1rem;
+
+        &:hover {
+          border: 1px solid $tmg-yellow;
+          background: transparent;
+          color: white;
+          transition: ease-in 300ms;
+        }
+      }
+    }
+
+    button.slick-next.slick-arrow {
+      background: url('../../images/right-arrow.png') center center no-repeat !important;
+      background-size: 15px 30px !important;
+    }
+
+    .slick-dots li {
+      button {
+        background: none !important;
+        border: 1px solid $tmg-yellow;
+      }
+
+      &.slick-active {
+        button {
+          background: $tmg-yellow !important;
+        }
+      }
+    }
+  }
+}
