@@ -84,8 +84,8 @@
     "lint:scripts": "eslint resources/assets/scripts resources/assets/build",
     "lint:styles": "stylelint \"resources/assets/styles/**/*.{css,sass,scss,sss,less}\"",
     "test": "npm run -s lint",
-    "gitdist": "git add dist && git commit -m \"build\" && git push origin master",
-    "deploy": "yarn rmdist && yarn build:production && yarn gitdist && git push -f staging master"
+    "gitdist": "yarn rmdist && yarn build:production && git add . && git commit -m \"build\"",
+    "deploy": "git push origin master && git push -f staging master"
   },
   "engines": {
     "node": ">= 6.9.4"
