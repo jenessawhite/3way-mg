@@ -91,14 +91,14 @@ Container::getInstance()
         ]);
     }, true);
 
-    // Include custom navwalker
+// Include custom navwalker
 require_once('bs4navwalker.php');
 
 // Register WordPress nav menu
 register_nav_menu('main', 'Main Nav');
 
 if( function_exists('acf_add_options_page') ) {
-  
+
   acf_add_options_page(array(
     'page_title' 	=> 'Site Settings',
     'menu_title'	=> 'Site Settings',
@@ -114,3 +114,12 @@ function auto_copyright($year = 'auto'){
   if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); }
   if(intval($year) > date('Y')){ echo date('Y'); }
 }
+
+function themeslug_setup(){
+  /**
+   * Add theme support for the Eventbrite API plugin.
+   * See: https://wordpress.org/plugins/eventbrite-api/
+   */
+  add_theme_support( 'eventbrite' );
+}
+add_action( 'after_setup_theme', 'themeslug_setup' );

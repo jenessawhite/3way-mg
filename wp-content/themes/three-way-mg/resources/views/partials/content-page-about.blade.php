@@ -38,7 +38,7 @@
 
       <?php if ( $side == "right" ) : ?>
         <div class="team-member row m-0">
-          <div class="info-wrap col-lg-6 order-2 order-lg-1">
+          <div class="info-wrap col-md-6 order-2 order-md-1">
             <h3><?php echo $name; ?></h3>
             <p><?php echo $subheading; ?></p>
             <hr>
@@ -71,7 +71,7 @@
             </div>
           </div>
 
-          <div class="headshot col-lg-6 px-0 order-1 order-lg-2">
+          <div class="headshot col-md-6 px-0 order-1 order-md-2">
             <img src="<?php echo $image; ?>" alt="<?php echo $name ?>" class="img-fluid"/>
           </div>
         </div>
