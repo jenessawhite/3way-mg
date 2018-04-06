@@ -1,5 +1,5 @@
 <!--Footer-->
-<footer class="pt-4 container px-0">
+<footer class="pt-4 container px-0 mt-5">
   <!--Footer Links-->
   <div class="container-fluid px-5">
     <hr>
