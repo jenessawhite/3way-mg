@@ -1,0 +1,80 @@
+body {
+  font-family: $monsterrat;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fugaz;
+}
+
+.logo {
+  max-width: 144px;
+}
+
+.navbar-nav {
+  .nav-link {
+    font-family: $fugaz;
+    color: $black;
+    position: relative;
+    transform: translateZ(0);
+    transition: color 1000ms;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $tmg-blue;
+      transform: scaleX(0);
+      transform-origin: 100% 50%;
+      transition: 300ms ease-out;
+      transition-property: transform;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.social-links-list {
+  list-style: none;
+  display: inline-flex;
+
+  .social-icon-link {
+    border: 1px solid $tmg-yellow;
+    border-radius: 50%;
+    width: rem(30px);
+    height: rem(30px);
+    text-align: center;
+    margin: rem(5px);
+
+    .social-icon {
+      font-size: 18px;
+      margin: rem(5px);
+      color: $black;
+    }
+
+    &:hover {
+      background-color: $tmg-yellow;
+      transition: 500ms ease-in;
+
+      .social-icon {
+        transition: 500ms ease-in;
+        color: $tmg-blue;
+      }
+    }
+  }
+}

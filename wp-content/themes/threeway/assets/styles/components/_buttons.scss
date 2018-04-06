@@ -1,0 +1,16 @@
+.btn-primary {
+  background: $tmg-yellow;
+  color: $black;
+  font-family: $fugaz;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: $tmg-yellow;
+    background: $black;
+    color: $white;
+    transition: 500ms;
+  }
+}

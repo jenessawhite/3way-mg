@@ -1,0 +1,31 @@
+// Variables
+$fa-font-path: '~font-awesome/fonts';
+// Grid settings
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+
+// Updated Bootstrap Grid Widths
+$container-max-widths: (
+  sm: 576px,
+  md: 992px,
+  lg: 1190px,
+  xl: 1224px,
+  xxl: 1350px
+) !default;
+
+// Colors
+$primary: #ffbf00;
+
+$tmg-yellow: $primary;
+$tmg-blue: #124e78;
+$tmg-grey: #d8d8d8;
+
+$white: #fffefc;
+$black: #070500;
+
+// Fonts
+$monsterrat: 'Montserrat', sans-serif;
+$fugaz: 'Fugaz One', cursive;
+
+// Shadow
+$white-shadow: 0 2px 4px 6px rgba(0, 0, 0, 0.5);

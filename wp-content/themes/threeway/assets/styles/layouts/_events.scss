@@ -1,0 +1,69 @@
+.tmg-event {
+  margin: 3rem 0;
+}
+
+.graphic-header {
+  background-size: cover;
+  color: $white;
+  position: relative;
+
+  .entry-meta {
+    font-weight: bold;
+    border-bottom: 3px solid $tmg-yellow;
+    padding-bottom: rem(6px);
+    letter-spacing: 1px;
+
+    span:not(.event-time) {
+      display: none; // hide link to details, etc. because everything is on the index
+    }
+  }
+
+  h2 {
+    color: $white;
+    margin: 0;
+    padding: rem(12px 0);
+  }
+
+  // API only partially hooks up WP functions, so we need to get creative with managing the returned image
+  .eventbrite-event-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .description {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tmg-events {
+  margin-bottom: rem(40px);
+}
+
+.bg-blue {
+  background: rgba($tmg-blue, 0.75);
+}
+
+.eventbrite-widget {
+  iframe {
+    min-height: 280px;
+  }
+}
+
+.featured-event {
+  .description {
+    span:not(.event-time) {
+      display: none; // hide link to details, etc. because everything is on the index
+    }
+  }
+}
