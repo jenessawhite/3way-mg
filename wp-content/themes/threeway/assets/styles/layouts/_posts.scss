@@ -1,5 +1,69 @@
-.category-events header {
+.category-events .header-image {
   min-height: 50vh;
   background-size: cover;
   background-position: center;
+}
+
+.entry {
+  margin: 3rem 0 rem(40px);
+
+  .graphic-header {
+    background-size: cover;
+    color: $white;
+    position: relative;
+
+    .entry-meta {
+      font-weight: bold;
+      border-bottom: 3px solid $tmg-yellow;
+      padding-bottom: rem(6px);
+      letter-spacing: 1px;
+
+      span:not(.event-time) {
+        display: none; // hide link to details, etc. because everything is on the index
+      }
+    }
+
+    h2 {
+      color: $white;
+      margin: 0;
+      padding: rem(12px 0);
+    }
+
+    .entry-photo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .description {
+      color: $black;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      a:last-child {
+        display: block;
+        max-width: 150px;
+        margin: 1rem auto;
+        background: $tmg-yellow;
+        color: $black;
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 3px;
+
+        &:hover {
+          border-color: $tmg-yellow;
+          background: $black;
+          color: $white;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+
+  .bg-blue {
+    background-color: rgba($tmg-blue, 0.75);
+  }
 }
