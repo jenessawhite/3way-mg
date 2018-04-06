@@ -1,5 +1,5 @@
 <header class="container p-0">
-  <nav class="navbar row pb-0">
+  <nav class="navbar pb-0">
   <!-- navbar-expand-md -->
     <?php
       $image = get_field('nav_logo', 'option');
@@ -66,5 +66,5 @@
     </div>
   </nav>
 
-  <hr class="row"/>
+  <hr />
 </header>
