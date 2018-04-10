@@ -121,8 +121,9 @@
 
   .contact-page {
     .intro-wrap {
+      padding: 1rem;
       @include media-breakpoint-up(md) {
-        padding: 3rem 10rem;
+        padding: 2rem 10rem;
       }
     }
 

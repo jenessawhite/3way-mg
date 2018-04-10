@@ -5,7 +5,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="tmg-events col-12 col-md-10 offset-md-1 p-0 text-center">
+    <div class="tmg-events col-12 col-md-10 offset-md-1 text-center">
       <h1 class="page-title"><?php the_title(); ?></h1>
       <?php
         $the_query = new WP_Query( $custom_events_args );
@@ -75,7 +75,7 @@
         <article id="event-<?php the_ID(); ?>" <?php post_class("tmg-event"); ?> data-eventTime="<?php $eventbrite_date; ?>">
           <header class="graphic-header">
             <div class="row no-gutters">
-              <div class="eventbrite-event-photo"><?php the_post_thumbnail(); ?></div>
+              <div class="eventbrite-event-photo d-none d-lg-block" ><?php the_post_thumbnail(); ?></div>
               <div class="col bg-blue px-4 py-3">
                 <div class="row">
                   <div class="col-sm-12">
@@ -118,7 +118,7 @@
     <?php endif; ?>
 
     <?php if ( get_field('eventbrite_profile', 'option') ) : ?>
-      <a href="<?php echo get_field('eventbrite_profile', 'option'); ?>" class="btn btn-secondary" target="_blank">See All Our Events</a>
+      <a href="<?php echo get_field('eventbrite_profile', 'option'); ?>" class="btn btn-secondary mb-4" target="_blank">See All Our Events</a>
     <?php endif; ?>
 
     </div>

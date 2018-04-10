@@ -48,6 +48,13 @@
 
 .tmg-events {
   margin-bottom: rem(40px);
+  @include media-breakpoint-down(md) {
+    padding: 1rem 0 0;
+  }
+
+  .tmg-event:first-of-type {
+    margin: 0 0 3rem;
+  }
 }
 
 .bg-blue {
